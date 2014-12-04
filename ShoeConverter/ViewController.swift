@@ -41,6 +41,6 @@ class ViewController: UIViewController {
         let conversionConstant = 30.5
         
         womenConvertedShoeSizeLabel.hidden = false
-        womenConvertedShoeSizeLabel.text = "\(sizeFromTextField + conversionConstant)" + " in European Shoe Size"
+       // womenConvertedShoeSizeLabel.text = "\(sizeFromTextField + conversionConstant)" + " in European Shoe Size"
     }
 }
