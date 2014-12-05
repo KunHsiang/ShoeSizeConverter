@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C68k" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C78c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
@@ -98,7 +98,6 @@
                                     <rect key="frame" x="258" y="124" width="80" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="convertButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PQ6-Ei-tca"/>
                                     <action selector="convertWomenShoeSizeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rjD-r3-Hmh"/>
                                 </connections>
                             </button>
@@ -132,11 +131,10 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="convertWomenShoeSizeButtonPressed" destination="y02-0z-CvS" id="rsK-rx-WNd"/>
                         <outlet property="mensConvertedShoeSizeLabel" destination="pc1-eu-93C" id="jZk-K3-8nI"/>
                         <outlet property="mensShoeSizeTextField" destination="bsB-RO-mvB" id="q9y-fU-xZl"/>
-                        <outlet property="womenConvertedShoeSizeLabel" destination="pc1-eu-93C" id="qDD-US-dWi"/>
-                        <outlet property="womensShoeSizeTextField" destination="XuC-Ch-WMq" id="Bes-Xm-3aW"/>
+                        <outlet property="womenConvertedShoeSizeLabel" destination="fs8-6v-PQE" id="qtx-c4-Ftm"/>
+                        <outlet property="womenConvertedShoeSizeTextField" destination="pc1-eu-93C" id="zaJ-eW-Ba2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

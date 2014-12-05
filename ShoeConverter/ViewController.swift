@@ -12,8 +12,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var mensShoeSizeTextField: UITextField!
     @IBOutlet weak var mensConvertedShoeSizeLabel: UILabel!
-    @IBOutlet weak var womensShoeSizeTextField: UILabel!
-    @IBOutlet weak var womenConvertedShoeSizeLabel: UITextField!
+    @IBOutlet weak var womenConvertedShoeSizeTextField: UITextField!
+    @IBOutlet weak var womenConvertedShoeSizeLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,10 +37,10 @@ class ViewController: UIViewController {
     
 
     @IBAction func convertWomenShoeSizeButtonPressed(sender: UIButton) {
-        let sizeFromTextField = womenConvertedShoeSizeLabel.text.toInt()!
+        let sizeFromTextField = Double((womenConvertedShoeSizeTextField.text as NSString).doubleValue)
         let conversionConstant = 30.5
         
         womenConvertedShoeSizeLabel.hidden = false
-       // womenConvertedShoeSizeLabel.text = "\(sizeFromTextField + conversionConstant)" + " in European Shoe Size"
+        womenConvertedShoeSizeLabel.text = "\(sizeFromTextField + conversionConstant)" + " in European Shoe Size"
     }
 }
